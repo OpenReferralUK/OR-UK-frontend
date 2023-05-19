@@ -34,6 +34,25 @@ invalidate
 
 invalidations cost money, and amazon recomend doing it otherways. I haven't really understood those otherways.
 
+# orukcms service
+
+A service called orukcms is required for the cms (strapi?) to work
+
+The domain is currentlly https://admin.beta.openreferraluk.org
+
+This points to the openref-test target group, which points to a linux server.
+
+Despite being called "beta" and "test" they are both used by live.
+
+To restart the server (should it go down):
+sudo service orukcms restart
+
+# strapi api
+
+The strapi api is at: https://admin.beta.openreferraluk.org/admin/auth/login
+
+Requires the orukcms service to be running (above)
+
 #  Open Referral UK
 The Open Referral UK data standard is a consistent way of recording and sharing information about services. 
 
