@@ -6,7 +6,7 @@ import LinkExternal from "../footer/LinkExternal";
 
 const Header = ({ mainMenu, topMenuId }) => {
   const forumLink = {
-    url: "https://forum.openreferraluk.org/",
+    url: "https://forum.openreferral.org/",
     TextToDisplay: "Forum",
     labelText: "Forum",
     external: true,
