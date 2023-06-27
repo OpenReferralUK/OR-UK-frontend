@@ -47,6 +47,17 @@ Despite being called "beta" and "test" they are both used by live.
 To restart the server (should it go down):
 sudo service orukcms restart
 
+To list services:
+systemctl --type=service
+
+To see if this service is running:
+systemctl status orukclient.service
+
+To find the server, use s3 to find the loadbalancer and target-group. The target changes IP when restarted.
+
+In the past, the service has stopped running, and we have had to restart it.
+Also, the entire instance stopped working at one point, and we had to stop and restart it (resulting in a new IP).
+
 # strapi api
 
 The strapi api is at: https://admin.beta.openreferraluk.org/admin/auth/login
